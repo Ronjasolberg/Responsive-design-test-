@@ -44,3 +44,12 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+img {
+  max-width: 200px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+}

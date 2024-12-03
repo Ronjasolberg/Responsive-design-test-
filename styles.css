@@ -45,11 +45,33 @@ h1 {
   font-size: 1.5rem;
 }
 
-img {
-  max-width: 200px;
-}
-
 .flexbox {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
+.flexbox-item {
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.flexbox-item img {
+  width: 20vw;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .flexbox {
+    flex-direction: column; 
+  }
+
+  .flexbox-item img {
+    width: 80%; 
+    max-width: 400px;
+  }
+} 

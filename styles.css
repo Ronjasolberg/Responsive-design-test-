@@ -75,3 +75,19 @@ h1 {
     max-width: 400px;
   }
 } 
+
+@media (min-width: 1200px) {
+  .flexbox {
+    justify-content: space-between; 
+    gap: 40px; 
+  }
+
+  .flexbox-item img {
+    width: 15vw; 
+    max-width: 400px; 
+  }
+
+  .flexbox-item {
+    flex: 0 1 25%; 
+  }
+}
